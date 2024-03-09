@@ -1,0 +1,52 @@
+/* General styling for the Forum page */
+.Forum {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9fcff; /* Light azure background for contrast */
+    min-height: 100vh;
+  }
+  
+  .Forum h1 {
+    color: #003366; /* Navy blue for the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the container of the post list */
+  .post {
+    background-color: #ffffff;
+    border-left: 5px solid #ffed29;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+    position: relative; /* Needed for absolute positioning of children */
+  }
+  
+  .post:hover {
+    background-color: #eef2f7;
+    transform: translateX(5px);
+  }
+  
+  .postTitle {
+    font-size: 16px;
+    color: #003366;
+    font-weight: bold;
+    width: 500px; /* Fixed width for title */
+    margin-left: 10px; /* Add 10px margin to the left */
+    text-align: left; /* Ensure text alignment is to the left */
+  }
+  
+  .postAuthor, .postLikes {
+    position: absolute; /* Position author and likes absolutely within the post */
+    white-space: nowrap; /* Prevent wrapping to ensure spacing */
+  }
+  
+  .postAuthor {
+    left: 500px; /* 700px from the left edge of the post */
+  }
+  
+  .postLikes {
+    left: 700px; /* 1100px from the left edge of the post */
+  }
+  
